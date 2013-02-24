@@ -2,7 +2,7 @@ import java.io.*;
 public class SpawningQuine {
    public static void main(String[] args) throws Exception {
       char q = 34;
-      String out = "Quine$";
+      String out = "SpawningQuine$";
       String text = (
          "import java.io.*; " +
          "public class [OUT] { " +
