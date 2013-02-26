@@ -1,9 +1,11 @@
-public class FinallyContinue {
+// from Java Puzzlers
+
+public class FinallyDoNotContinue {
 	public static void main(String... args) {
 		while (true) {
 			try {
 				System.out.println("Devoxx");
-				break;
+				System.exit(0);
 			} finally {
 				continue;
 			}
