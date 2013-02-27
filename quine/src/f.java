@@ -1,0 +1,1 @@
+enum f{f;System z;String s="enum f{f;System z;String s=%c%s%1$c;{z.out.printf(s,34,s);z.exit(0);}}";{z.out.printf(s,34,s);z.exit(0);}}

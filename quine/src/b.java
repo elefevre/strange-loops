@@ -1,0 +1,1 @@
+enum b{b;System z;String s="}};)0(tixe.z;))(esrever.)s(reffuBgnirtS wen,43,s(ftnirp.tuo.z{;%c%s%1$c=s gnirtS;z metsyS;b{b mune";{z.out.printf(s,34,new StringBuffer(s).reverse());z.exit(0);}}
