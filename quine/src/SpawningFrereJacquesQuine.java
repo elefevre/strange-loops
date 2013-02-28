@@ -23,7 +23,7 @@ public class SpawningFrereJacquesQuine {
 				"		while ((s = stdInput.readLine()) != null) {" + 
 				"			index++;" + 
 				"			if (paroles.length > index) System.out.println(paroles[index]);" + 
-				"			System.out.println(`*` + s);" + 
+				"			System.out.println('\\t' + s);" + 
 				"		}" + 
 				"		while (paroles.length > index) {" + 
 				"			index++;" + 
@@ -47,7 +47,7 @@ public class SpawningFrereJacquesQuine {
 		while ((s = stdInput.readLine()) != null) {
 			index++;
 			if (paroles.length > index) System.out.println(paroles[index]);
-			System.out.println("*" + s);
+			System.out.println('\t' + s);
 		}
 		while (paroles.length > index) {
 			index++;
