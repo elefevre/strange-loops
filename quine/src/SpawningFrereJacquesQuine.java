@@ -10,6 +10,7 @@ public class SpawningFrereJacquesQuine {
 				+ "String[] paroles = {`Frere Jacques`, `Frere Jacques`, `Dormez-vous ?`, `Dormez-vous ?`, `Sonnez les matines`, `Sonnez les matines`, `Ding daing dong`, `Ding daing dong`};"
 				+ "char q = 34; String out = `[OUT]$`; String text = `[TEXT]`; "
 				+ "if (out.lastIndexOf('$') - out.indexOf('$') > 4) System.exit(0);"
+				+ "Thread.sleep(1000);"
 				+ "System.out.println(paroles[0]);"
 				+ "PrintWriter pw = new PrintWriter(out + `.java`); "
 				+ "pw.format(text, 34, out, text); "
@@ -34,6 +35,7 @@ public class SpawningFrereJacquesQuine {
 				.replace("`", "%1$c").replace("[OUT]", "%2$s")
 				.replace("[TEXT]", "%3$s");
 		if (out.lastIndexOf('$') - out.indexOf('$') > 4) System.exit(0);
+		Thread.sleep(1000);
 		System.out.println(paroles[0]);
 		PrintWriter pw = new PrintWriter(out + ".java");
 		pw.format(text, 34, out, text);
