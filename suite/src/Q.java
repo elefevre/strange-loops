@@ -7,10 +7,8 @@ public class Q {
 	}
 
 	public int q(int n) {
-		if (n <= 1)
+		if (n <= 2)
 			return 1;
-		if (n == 2)
-			return 3;
 
 		return q(n - q(n - 1)) + q(n - q(n - 2));
 	}
