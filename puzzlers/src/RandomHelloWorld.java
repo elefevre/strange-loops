@@ -7,18 +7,16 @@ public class RandomHelloWorld {
 				+ randomString(-147909649));
 	}
 
-	public static String randomString(int i) {
-		Random ran = new Random(i);
-		StringBuilder sb = new StringBuilder();
-		for (int n = 0;; n++) {
+	public static String randomString(int seed) {
+		Random ran = new Random(seed);
+		String str = "";
+		for (int i = 0; i < 5; i++) {
 			int k = ran.nextInt(27);
-			if (k == 0)
-				break;
 
-			sb.append((char) ('`' + k));
+			str += (char) (96 + k);
 		}
 
-		return sb.toString();
+		return str;
 	}
 
 }
