@@ -1,9 +1,9 @@
 public class DoContinue {
     public static void main(String[] args) {
         http://www.devoxx.fr/
-        do {
+        while(true) {
             System.out.println("Devoxx");
-            continue http;
-        } while (false);
+            break http;
+        } 
     }
 }
