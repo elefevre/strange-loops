@@ -6,10 +6,10 @@ public class Fibonacci {
 		}
 	}
 
-	public int fib(int n) {
-		if (n == 0 || n == 1)
-			return n;
+	public int fib(int rank) {
+		if (rank == 0 || rank == 1)
+			return rank;
 
-		return fib(n - 2) + fib(n - 1);
+		return fib(rank - 2) + fib(rank - 1);
 	}
 }

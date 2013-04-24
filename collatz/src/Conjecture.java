@@ -1,20 +1,19 @@
 public class Conjecture {
 	public static void main(String[] args) {
-		for (int i = 1; i < 100; i++) {
-			System.out.println(i + " required " + compute(0, i) + " steps");
+		for (int i = 1; i <= 10000; i++) {
+			System.out.println(stepsTo1(0, i));
 		}
 	}
 
-	private static int compute(int a, int b) {
-		if (b == 1) {
-			return a;
-		}
+	public static int stepsTo1(int steps, int value) {
+		if (value == 1)
+			return steps;
 
-		boolean even = b % 2 == 0;
+		boolean even = value % 2 == 0;
 		if (even) {
-			return compute(a + 1, b >> 1);
+			return stepsTo1(steps + 1, value / 2);
 		}
-		return compute(a + 1, (b * 3 + 1));
+		return stepsTo1(steps + 1, (value * 3 + 1));
 	}
 
 }
